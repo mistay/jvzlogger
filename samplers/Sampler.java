@@ -52,9 +52,8 @@ public class Sampler extends Thread {
 			}
 			try {
 				Thread.sleep(Config.Samplersleeptimeinseconds * 1000);
-			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			} catch (Exception e) {
+				Log.debug("could not sleep SamplerThread: " + e.getMessage());
 			}
 		}
 	}
