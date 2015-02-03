@@ -6,6 +6,10 @@ set -e
 HOST="10.0.10.98"
 
 WORKINGDIR=$1
+if [ $WORKINGDIR = ""];
+then
+	$WORKINGDIR = "."
+fi
 cd $WORKINGDIR
 
 if [ -d bin ];
