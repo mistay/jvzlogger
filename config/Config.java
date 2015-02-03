@@ -35,8 +35,10 @@ public class Config {
 			LOGFILE = (prop.getProperty("LOGFILE"));
 			OnewireDir = (prop.getProperty("OnewireDir"));
 			ENABLELOG = Boolean.parseBoolean((prop.getProperty("ENABLELOG")));
+			BASEURL = (prop.getProperty("BASEURL"));
 			System.out.println("ENABLELOG: " + ENABLELOG);
 			System.out.println("LOGFILE: " + LOGFILE);
+			System.out.println("BASEURL: " + BASEURL);
 
 			Log.info("Samplersleeptimeinseconds: " + Samplersleeptimeinseconds);
 			Log.info("OnewireDir: " + OnewireDir);
