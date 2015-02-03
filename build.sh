@@ -22,11 +22,11 @@ mkdir bin
 cd src
 javac main/Main.java -d ../bin/
 cd ../bin
-jar cvmf ../manifest.txt jheating.jar */*.class
+jar cvmf ../manifest.txt jvzlogger.jar */*.class
 
-if [ -f "jheating.jar" ];
+if [ -f "jvzlogger.jar" ];
 then
-	echo "successfully built $WORKINGDIR/bin/jheating.jar"
+	echo "successfully built $WORKINGDIR/bin/jvzlogger.jar"
 fi
 
 exit 0
