@@ -19,8 +19,9 @@ mkdir bin
 
 cd src
 javac main/Main.java -d ../bin/
+
 cd ../bin
-jar cvmf ../manifest.txt jvzlogger.jar */*.class
+jar cvmf ../manifest.txt jvzlogger.jar */*.class */*/*.class
 
 if [ -f "jvzlogger.jar" ];
 then
