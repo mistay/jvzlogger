@@ -2,8 +2,6 @@
 
 set -e
 
-#HOST="rpi01.langhofer.net"
-
 WORKINGDIR=$1
 if [ "$WORKINGDIR" == "" ];
 then
