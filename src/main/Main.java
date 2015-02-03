@@ -2,11 +2,14 @@ package main;
 
 import config.Config;
 import samplers.Sampler;
-import helpers.Easyfile;
 import log.Log;
 
 public class Main {
+	public static String VERSION = "20150203";
+
 	private Main() {
+		System.out.println("starting jheating v" + VERSION
+				+ ". logging to logfile: " + Log.LOGFILE);
 
 		Config.load();
 
