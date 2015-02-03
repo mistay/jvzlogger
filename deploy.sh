@@ -28,7 +28,7 @@ then
 	
 	
 	echo "running (/root/startjvzlogger.sh)..."
-	echo "/root/startjvzlogger.sh" | ssh root@$HOST
+	echo "chmod a+x /root/startjvzlogger.sh; /root/startjvzlogger.sh" | ssh root@$HOST
 
 	echo "mounting ro"
 	echo "mount / -o remount,ro" | ssh root@$HOST
